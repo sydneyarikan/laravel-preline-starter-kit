@@ -1,4 +1,4 @@
-<x-auth.layout>
+<x-layouts.auth>
 
     <div class="mt-7 bg-white border border-gray-200 rounded-xl shadow-2xs dark:bg-neutral-900 dark:border-neutral-700">
     <div class="p-4 sm:p-7">
@@ -60,4 +60,4 @@
         </div>
     </div>
 </div>
-</x-auth.layout>
+</x-layouts.auth>
