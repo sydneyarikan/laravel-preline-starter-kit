@@ -1,10 +1,10 @@
 <x-layouts.auth>
 
-    <div class="mt-7 bg-white border border-gray-200 rounded-xl shadow-2xs dark:bg-neutral-900 dark:border-neutral-700">
+    <div class="mt-7 bg-white border border-gray-200 rounded-xl shadow-2xs">
     <div class="p-4 sm:p-7">
         <div class="text-center">
-            <h1 class="block text-2xl font-bold text-gray-800 dark:text-white">Login</h1>
-            <p class="mt-2 text-sm text-gray-600 dark:text-neutral-400">
+            <h1 class="block text-2xl font-bold text-gray-800 dark:text-black">Login</h1>
+            <p class="mt-2 text-sm text-black-600 ">
                 Don't have an account yet?
                 <a class="
                         text-blue-600 decoration-2 hover:underline focus:outline-hidden focus:underline font-medium
@@ -35,7 +35,7 @@
                     <!-- Checkbox -->
                     <div class="flex items-center">
                         <div class="flex">
-                            <input id="remember-me" name="remember-me" type="checkbox" class="shrink-0 mt-0.5 border-gray-200 rounded-sm text-blue-600 focus:ring-blue-500 dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800">
+                            <input id="remember-me" name="remember-me" type="checkbox" class="shrink-0 mt-0.5 border-gray-200 rounded-sm text-blue-600 focus:ring-blue-500  dark:checked:bg-blue-500 dark:checked:border-blue-500">
                         </div>
                         <div class="ms-3">
                             <label for="remember-me" class="text-sm dark:text-white">Remember me</label>
