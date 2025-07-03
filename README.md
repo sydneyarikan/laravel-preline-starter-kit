@@ -1,21 +1,21 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## Configuration Instructions
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Install and configure mail hog for testing emails.
+Install Mail Hog as a docker image. Use the following command to run docker in the background:
 
-## List of Features
+sudo docker run -d -p 1025:1025 -p 8025:8025 mailhog/mailhog
 
-Implement the following using Laravel Fortify
-Authentication
-Two-Factor Authentication
-User Registration
-Password Reset
-Email Verification
-Password Confirmation
+Open Mail Hog in the browser using the URL: http://localhost:8025/
 
-Implement user interface using PrelineUI
+Add the following to .env
 
+MAIL_MAILER=log
+MAIL_SCHEME=null
+MAIL_HOST=localhost
+MAIL_PORT=8025
+MAIL_USERNAME=null
+MAIL_PASSWORD=null
+MAIL_FROM_ADDRESS="no-reply@test-email.com"
+MAIL_FROM_NAME="${APP_NAME}"
+
+https://kinsta.com/blog/mailhog/
